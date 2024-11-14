@@ -1,0 +1,379 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif JP";
+  color: #000000;
+  line-height: 22.99px;
+  text-align: center;
+  width: 100%;
+  max-width: 1500px;
+  height: 700px;
+  margin: 0 auto 0 auto;
+}
+
+
+.logo {
+  width: 129px;
+  height: 136px;
+}
+
+hr {
+  background-color: #63B13C;
+  height: 3px;
+  width: 100px;
+  border: none;
+  display: inline-block;
+}
+
+.hr-white {
+  background-color: #ffffff;
+  height: 3px;
+  width: 100px;
+  border: none;
+  display: inline-block;
+}
+
+
+/* Header Section */
+.header {
+  background-image: url('images/topimage.png');
+  background-size: cover;
+  background-position: center;
+  box-sizing: content-box;
+  width: 100%;
+  width: 1500px;
+  height: 700px;
+  color: white;
+  text-align: center;
+  position:relative;
+}
+
+.wrapper-header-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 250px;
+  height: 79.22px;
+  margin: 30px;
+}
+
+.contact-button {
+  margin-right: 30px;
+  color: white;
+  display: flex;
+  align-items: center; /* 縦方向の中央寄せ */
+  justify-content: center; /* 横方向の中央寄せ（必要に応じて） */ 
+  border: 1px solid #000; /* ボックスの可視化 */
+}
+
+.contact-button > a {
+  font-size: 24px;
+  background-color: #63B13C;
+  border-radius: 30px;
+  /* display: inline-block; */
+  width: 244px; /* a要素の横幅を設定 */
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+
+  
+}
+
+.copyright h1 {
+  font-size: 48px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  line-height: 1.5em;
+}
+
+
+
+
+
+
+
+/* Business Section */
+
+.business {
+  height: 806px;
+  padding: 50px 150px;
+}
+
+.business-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.business-wrapper-content {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.business-item {
+  margin: 65.3px;
+  width: 251px; /* divの高さを設定 */
+  height: 268px;
+  padding: 50px 15px 30px 15px;
+  border: 3px solid #63B13C;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  
+  
+}
+
+.business-item > h3 {
+  font-size: 24px;
+  /* width: 96px; */
+  /* display: block; */
+  height: 34px;
+}
+
+.business-item > h3 > span {
+  color: #63B13C;
+}
+
+.wrapper-business-contact {
+  /* display: flex; */
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center; /* 縦方向の中央寄せ */
+  justify-content: center; /* 横方向の中央寄せ（必要に応じて） */ 
+  
+}
+
+.wrapper-business-contact > a {
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+  background-color: #63B13C;
+  width: 340px; /* a要素の横幅を設定 */
+  height: 54px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 15px; /*paddingで中央に文字配置できてるがいいのか？*/
+  text-decoration: none;
+}
+
+
+
+
+
+/* Project Example Section */
+.project {
+  background-color: #DCFACD;
+  height: 806px;
+  padding: 50px 150px;
+}
+
+.wrapper-project-example {
+  width:100%;
+  
+}
+
+.wrapper-project-example .container-example-box {
+  max-width:1200px;
+  margin:0px auto;
+  padding: 80px 0px;
+}
+
+.container-example-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pool {
+  width: 600px;
+  height: 400px;
+}
+.content-item {
+  margin: 20px;
+  width: 600px;
+  height: 400px;
+}
+
+.text {
+  width: 600px;
+  height: 400px;
+}
+
+
+
+
+/* News Section */
+.news {
+  height: 806px;
+  padding: 50px 150px;
+  display: flex;
+  align-self: center;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.topicsnews {
+  position:relative;
+}
+
+.topics {
+  background-color: #275B0D;
+  width: 550px;
+  height: 200px;
+  font-size: 36px;
+  position:absolute;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+
+.topicsright {
+  background-color: #63B13C;
+  width: 550px;
+  height: 200px;
+  position:absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+
+
+
+
+/* parallax */
+.parallax_box {
+  height: 400px;
+
+}
+.parallax_content{
+  display: flex;
+  width: 1500px;
+  height: 400px;
+  /* padding: 100%; */
+  justify-content: center;
+  align-items: center;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img_bg_01{
+  width: 1500px;
+  height: 400px;
+  background-image: url(images/parallax.png);
+}
+
+
+
+
+/* company info section */
+.company-info {
+  background-color: #ffffff;
+  height: 1300px;
+  padding: 50px 150px;
+}
+
+#company-table {
+  width: 100%;
+}
+
+.tableheader {
+  width: 300px;
+  text-align:left;
+  border-bottom-color: #275B0D;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+
+.cell {
+  width: 900px;
+  text-align:left;
+  padding: 20px 0 20px 0;
+  border-bottom-color: #63B13C;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+
+.cell-long {
+  /* height: 292px; */
+  text-align:left;
+  border-bottom-color: #63B13C;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  padding: 20px 0 20px 0;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #63B13C;
+  height: 806px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.required {
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 52px;
+  display: inline-block;
+  text-align: center;
+  background: #275B0D;
+  color: #fff;
+  font-size: 14px;
+}
+
+.optional {
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 52px;
+  display: inline-block;
+  text-align: center;
+  background: #DCFACD;
+  color: #275B0D;
+  font-size: 14px;
+}
+
+.form-hr {
+  /* background-color: #ffffff; */
+  /* height: 3px; */
+  width: 900px;
+  border: none;
+  border-top: 0.1px dotted #ffffff;
+}
+
+
+/* footer */
+footer {
+  position:relative;
+  background-color: #275B0D;
+  height: 83px;
+}
+
+footer > p {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color: #ffffff;
+}
